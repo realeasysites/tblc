@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Two Brothers Lawn Care LLC | Lawn Mowing, Hardscape &amp; Snow Removal in Saco, ME</title>
+<meta name="description" content="Two Brothers Lawn Care LLC serves Saco, Maine and the surrounding area with mowing, pruning, seasonal clean ups, hardscape, and residential &amp; commercial snow removal. Call (207) 329-9788 for a free quote.">
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<a href="#main" class="visually-hidden">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="index.html" class="brand">
+      <img class="brand-mark" src="images/logo-real.jpg" alt="Two Brothers Lawn Care logo" style="border-radius:50%; object-fit:cover;">
+      <span class="brand-text">Two Brothers<br>Lawn Care<small>SACO, MAINE &middot; LLC</small></span>
+    </a>
+
+    <nav class="main-nav" aria-label="Primary">
+      <a href="#services">Services</a>
+      <a href="#gallery">Our Work</a>
+      <a href="#how-it-works">How It Works</a>
+      <a href="#area">Service Area</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#join">Careers</a>
+    </nav>
+
+    <div class="header-cta">
+      <a class="header-phone" href="tel:+12073299788">
+        <span>Call for a free quote</span>
+        <strong>(207) 329-9788</strong>
+      </a>
+      <a href="#quote" class="btn btn-clay">Get a Quote</a>
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="mobileNav" aria-label="Open menu">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M2 5h16M2 10h16M2 15h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+    </div>
+  </div>
+  <nav class="mobile-nav" id="mobileNav" aria-label="Mobile">
+    <a href="#services">Services</a>
+    <a href="#gallery">Our Work</a>
+    <a href="#how-it-works">How It Works</a>
+    <a href="#area">Service Area</a>
+    <a href="#reviews">Reviews</a>
+    <a href="#join">Careers</a>
+    <a href="#quote">Get a Quote</a>
+    <a href="tel:+12073299788">Call (207) 329-9788</a>
+  </nav>
+</header>
+
+<main id="main">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" style="padding: 0;">
+    <div class="hero-photo" style="background-image:url('images/hero-lawn.jpg');" aria-hidden="true"></div>
+    <video class="hero-video" autoplay muted loop playsinline poster="images/hero-lawn.jpg" aria-hidden="true">
+      <source src="video/hero-loop.mp4" type="video/mp4">
+    </video>
+    <div class="hero-stripes" aria-hidden="true"></div>
+    <div class="wrap">
+      <div>
+        <div class="hero-eyebrow">SACO, MAINE &middot; FAMILY OWNED &amp; OPERATED</div>
+        <h1>A sharp-looking<br>lawn, run by <em>two<br>brothers</em> who show up</h1>
+        <p class="hero-sub">Mowing, pruning, seasonal clean ups, hardscape, and snow removal for homes and businesses around Saco. No subcontractors, no surprises &mdash; just the two of us and a crew that treats your property like our own.</p>
+        <div class="hero-actions">
+          <a href="#quote" class="btn btn-clay">Get a Free Quote</a>
+          <a href="tel:+12073299788" class="btn btn-outline">
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M4 2h3l1.5 4-2 1.5a10 10 0 0 0 5 5l1.5-2 4 1.5v3c0 1-1 2-2 2C8 17 1 10 1 4c0-1 1-2 3-2z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></svg>
+            (207) 329-9788
+          </a>
+        </div>
+        <div class="hero-trust">
+          <div><strong>Locally</strong><span>Owned in Saco, ME</span></div>
+          <div><strong>5 Services</strong><span>Mow &middot; Prune &middot; Cleanup &middot; Hardscape &middot; Snow</span></div>
+          <div><strong>Fast</strong><span>Replies within 1 business day</span></div>
+        </div>
+      </div>
+
+      <div class="quote-card" id="quote">
+        <h2>Get a Free Quote</h2>
+        <p class="quote-sub">Tell us a bit about your property. We'll text or call you back with pricing.</p>
+        <form id="quoteForm" novalidate>
+          <div class="honeypot" aria-hidden="true">
+            <label for="company_website">Leave this field empty</label>
+            <input type="text" id="company_website" name="company_website" tabindex="-1" autocomplete="off">
+          </div>
+
+          <div class="field">
+            <label for="name">Full name</label>
+            <input type="text" id="name" name="name" autocomplete="name" required>
+          </div>
+
+          <div class="field-row">
+            <div class="field">
+              <label for="phone">Phone</label>
+              <input type="tel" id="phone" name="phone" autocomplete="tel" required>
+            </div>
+            <div class="field">
+              <label for="email">Email (optional)</label>
+              <input type="email" id="email" name="email" autocomplete="email">
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="address">Property address</label>
+            <input type="text" id="address" name="address" autocomplete="street-address" placeholder="Street, Saco ME">
+          </div>
+
+          <div class="field-row">
+            <div class="field">
+              <label for="service">Service needed</label>
+              <select id="service" name="service">
+                <option value="">Select one</option>
+                <option value="mowing">Lawn Mowing</option>
+                <option value="pruning">Pruning</option>
+                <option value="seasonal-cleanup">Seasonal Clean Up</option>
+                <option value="hardscape">Hardscape</option>
+                <option value="snow-removal">Snow Removal</option>
+                <option value="other">Something else</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="property_size">Property size</label>
+              <select id="property_size" name="property_size">
+                <option value="">Not sure</option>
+                <option value="small">Small (under 1/4 acre)</option>
+                <option value="medium">Medium (1/4 - 1 acre)</option>
+                <option value="large">Large (1+ acre)</option>
+                <option value="commercial">Commercial</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="message">Anything else we should know? (optional)</label>
+            <textarea id="message" name="message" placeholder="e.g. weekly mowing, overgrown hedges, a patio project..."></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-pine btn-block" id="quoteSubmit">Request My Quote</button>
+          <p class="field-hint">Prefer to talk? Call or text <a href="tel:+12073299788" style="color:var(--pine-dark); font-weight:700;">(207) 329-9788</a>.</p>
+
+          <div class="form-status" id="formStatus" role="status" aria-live="polite"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section id="about">
+    <div class="wrap about-grid">
+      <div>
+        <div class="section-eyebrow">WHO'S DOING THE WORK</div>
+        <h2>Two brothers.<br>One standard.</h2>
+        <p style="margin-top:18px; font-size:1.05rem;">Two Brothers Lawn Care LLC is a family-owned crew based right here in Saco. We started out mowing lawns for neighbors and grew into a full outdoor maintenance company &mdash; but we kept the part that mattered: you can still reach the people actually doing the work.</p>
+        <p>Every property gets treated the way we'd treat our own &mdash; clean edges, cleared walkways, and gates closed behind us on the way out.</p>
+        <ul class="about-list">
+          <li>
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M4 10.5l4 4 8-9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Owner-operated, every visit
+          </li>
+          <li>
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M4 10.5l4 4 8-9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Residential &amp; commercial properties
+          </li>
+          <li>
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M4 10.5l4 4 8-9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Straightforward pricing, no long-term contracts required
+          </li>
+        </ul>
+      </div>
+      <div class="about-art">
+        <img src="images/equipment-shop.jpg" alt="Two Brothers Lawn Care equipment and trucks in the shop" style="width:100%; height:100%; object-fit:cover;">
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SERVICES ============ -->
+  <section id="services" class="section-alt">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="section-eyebrow">WHAT WE DO</div>
+        <h2>Services</h2>
+        <p>From a weekly mow to a full hardscape build &mdash; and clearing the lot come winter &mdash; here's what we handle.</p>
+      </div>
+
+      <div class="service-list">
+        <div class="service-row">
+          <svg class="service-icon" viewBox="0 0 48 48" fill="none"><circle cx="24" cy="30" r="9" stroke="currentColor" stroke-width="2.2"/><path d="M24 21V8m0 0l-6 6m6-6l6 6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/><path d="M8 40h32" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>
+          <h3>Lawn Mowing</h3>
+          <p>Weekly or bi-weekly mowing, trimming, and edging that keeps your yard looking sharp all season.</p>
+          <span class="service-tag">Weekly &amp; Bi-Weekly</span>
+        </div>
+
+        <div class="service-row">
+          <svg class="service-icon" viewBox="0 0 48 48" fill="none"><path d="M14 34c8-2 12-8 16-18" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/><path d="M30 16l6-6m-4 10l7-2" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/><circle cx="14" cy="34" r="4" stroke="currentColor" stroke-width="2.2"/></svg>
+          <h3>Pruning</h3>
+          <p>Shrub and hedge shaping, small tree pruning, and cleanup so plantings stay healthy and tidy.</p>
+          <span class="service-tag">Shrubs &amp; Hedges</span>
+        </div>
+
+        <div class="service-row">
+          <svg class="service-icon" viewBox="0 0 48 48" fill="none"><path d="M10 30c6 4 10 4 16 0s10-4 16 0" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/><path d="M12 22c4-8 8-12 12-14 4 2 8 6 12 14" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>
+          <h3>Seasonal Clean Ups</h3>
+          <p>Spring and fall clean ups &mdash; leaf and debris removal, bed clearing, and getting your property ready for the season ahead.</p>
+          <span class="service-tag">Spring &amp; Fall</span>
+        </div>
+
+        <div class="service-row">
+          <svg class="service-icon" viewBox="0 0 48 48" fill="none"><rect x="8" y="26" width="10" height="10" stroke="currentColor" stroke-width="2.2"/><rect x="19" y="26" width="10" height="10" stroke="currentColor" stroke-width="2.2"/><rect x="30" y="26" width="10" height="10" stroke="currentColor" stroke-width="2.2"/><rect x="13.5" y="15" width="10" height="10" stroke="currentColor" stroke-width="2.2"/><rect x="24.5" y="15" width="10" height="10" stroke="currentColor" stroke-width="2.2"/></svg>
+          <h3>Hardscape</h3>
+          <p>Walkways, patios, and retaining walls built to hold up through a Maine winter.</p>
+          <span class="service-tag">Patios &amp; Walls</span>
+        </div>
+
+        <div class="service-row">
+          <svg class="service-icon" viewBox="0 0 48 48" fill="none"><path d="M24 6v36M8 15l32 18M40 15L8 33" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/><path d="M24 6l-4 4m4-4l4 4M24 42l-4-4m4 4l4-4M8 15l1.5 5.4M8 15l5.4-1.5M40 15l-5.4-1.5M40 15l-1.5 5.4M8 33l1.5-5.4M8 33l5.4 1.5M40 33l-5.4 1.5M40 33l-1.5-5.4" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <h3>Snow Removal</h3>
+          <p>Plowing, shoveling, and salting to keep driveways and lots clear all winter &mdash; residential and commercial.</p>
+          <span class="service-tag">Residential &amp; Commercial</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ RECENT WORK ============ -->
+  <section id="work" class="section-alt">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="section-eyebrow">FROM THE JOB SITE</div>
+        <h2>Recent work</h2>
+        <p>A few shots straight from properties we've worked on around Saco.</p>
+      </div>
+      <div class="work-grid work-grid-3">
+        <figure class="work-item">
+          <img src="images/mow-pattern.jpg" alt="Crosshatch mowing pattern cut into a large Saco, ME lawn">
+          <figcaption>Crosshatch mow pattern on a large residential lawn</figcaption>
+        </figure>
+        <figure class="work-item">
+          <img src="images/hardscape-work.jpg" alt="Circular paver patio hardscape installation in progress">
+          <figcaption>Paver patio hardscape install, in progress</figcaption>
+        </figure>
+        <figure class="work-item">
+          <img src="images/aerial-sunny.jpg" alt="Aerial view of a freshly mowed Saco, ME property">
+          <figcaption>Aerial view, freshly mowed property</figcaption>
+        </figure>
+      </div>
+      <div class="work-grid work-grid-3" style="margin-top:20px;">
+        <figure class="work-item">
+          <img src="images/truck-logo-closeup.jpg" alt="Two Brothers Lawn Care truck with logo and equipment trailer">
+          <figcaption>Our truck, loaded and ready</figcaption>
+        </figure>
+        <figure class="work-item">
+          <img src="images/trucks-service-list.jpg" alt="Two Brothers Lawn Care trucks showing full service list">
+          <figcaption>Full service list, right on the truck</figcaption>
+        </figure>
+        <figure class="work-item">
+          <img src="images/truck-crew-onsite.jpg" alt="Two Brothers Lawn Care truck with crew working on site in the background">
+          <figcaption>On site, residential &amp; commercial</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PHOTO GALLERY ============ -->
+  <section id="gallery">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="section-eyebrow">OUR WORK</div>
+        <h2>Photo gallery</h2>
+        <p>Real projects from real properties around Saco &mdash; tap any photo to view it larger.</p>
+      </div>
+      <div class="g-filters" role="group" aria-label="Filter gallery">
+        <button class="g-chip active" data-filter="all">All</button>
+        <button class="g-chip" data-filter="hardscape">Hardscapes</button>
+        <button class="g-chip" data-filter="lawns">Lawns & Mowing</button>
+        <button class="g-chip" data-filter="equipment">Equipment & Plowing</button>
+        <button class="g-chip" data-filter="landscaping">Landscaping</button>
+      </div>
+      <div class="g-grid" id="galleryGrid">
+        <figure class="g-item" data-cat="hardscape"><img src="images/gallery/hardscape-71415896437-.jpg" alt="Setting pavers on a new walkway" width="900" height="1200" loading="lazy"></figure>
+        <figure class="g-item" data-cat="hardscape"><img src="images/gallery/hardscape-img_0051.jpg" alt="Walkway layout staked out before excavation" width="900" height="1200" loading="lazy"></figure>
+        <figure class="g-item" data-cat="hardscape"><img src="images/gallery/hardscape-img_0054.jpg" alt="Excavating the walkway base" width="900" height="1200" loading="lazy"></figure>
+        <figure class="g-item" data-cat="hardscape"><img src="images/gallery/hardscape-img_0060.jpg" alt="Paver walkway going in" width="900" height="1200" loading="lazy"></figure>
+        <figure class="g-item" data-cat="hardscape"><img src="images/gallery/hardscape-img_0066.jpg" alt="Finished walkway" width="900" height="1200" loading="lazy"></figure>
+        <figure class="g-item" data-cat="hardscape"><img src="images/gallery/hardscape-img_1294.jpg" alt="Paver patio during install" width="1200" height="900" loading="lazy"></figure>
+        <figure class="g-item" data-cat="hardscape"><img src="images/gallery/hardscape-img_1296.jpg" alt="Patio base prepped and ready" width="1200" height="900" loading="lazy"></figure>
+        <figure class="g-item" data-cat="hardscape"><img src="images/gallery/hardscape-img_1961.jpg" alt="Circular patio base prepped" width="900" height="1200" loading="lazy"></figure>
+        <figure class="g-item" data-cat="hardscape"><img src="images/gallery/hardscape-img_2138.jpg" alt="Forms and gravel base for a new walkway" width="900" height="1200" loading="lazy"></figure>
+        <figure class="g-item" data-cat="hardscape"><img src="images/gallery/hardscape-img_2143.jpg" alt="Concrete walkway poured and finished" width="900" height="1200" loading="lazy"></figure>
+        <figure class="g-item" data-cat="hardscape"><img src="images/gallery/hardscape-img_2540.jpg" alt="Paver edging and flower bed wall" width="900" height="1200" loading="lazy"></figure>
+        <figure class="g-item" data-cat="hardscape"><img src="images/gallery/hardscape-img_2546.jpg" alt="Stone retaining wall around a garden bed" width="900" height="1200" loading="lazy"></figure>
+        <figure class="g-item" data-cat="hardscape"><img src="images/gallery/hardscape-img_2653.jpg" alt="Staking out a walkway" width="900" height="1200" loading="lazy"></figure>
+        <figure class="g-item" data-cat="hardscape"><img src="images/gallery/hardscape-img_2655.jpg" alt="Digging the walkway base" width="900" height="1200" loading="lazy"></figure>
+        <figure class="g-item" data-cat="hardscape"><img src="images/gallery/hardscape-img_2706.jpg" alt="Gravel base and compaction" width="900" height="1200" loading="lazy"></figure>
+        <figure class="g-item" data-cat="hardscape"><img src="images/gallery/hardscape-img_2732.jpg" alt="Granite step set in gravel base" width="900" height="1200" loading="lazy"></figure>
+        <figure class="g-item" data-cat="hardscape"><img src="images/gallery/hardscape-img_2735.jpg" alt="Paver walkway with granite step" width="900" height="1200" loading="lazy"></figure>
+        <figure class="g-item" data-cat="hardscape"><img src="images/gallery/hardscape-img_2736.jpg" alt="Curved paver walkway" width="900" height="1200" loading="lazy"></figure>
+        <figure class="g-item" data-cat="hardscape"><img src="images/gallery/hardscape-img_2740.jpg" alt="Finished paver walkway and granite steps at dusk" width="900" height="1200" loading="lazy"></figure>
+        <figure class="g-item" data-cat="hardscape"><img src="images/gallery/hardscape-img_3631.jpg" alt="Fresh bed edging and mulch at the front entry" width="900" height="1200" loading="lazy"></figure>
+        <figure class="g-item" data-cat="hardscape"><img src="images/gallery/hardscape-img_4085.jpg" alt="Large-format pavers laid out" width="900" height="1200" loading="lazy"></figure>
+        <figure class="g-item" data-cat="hardscape"><img src="images/gallery/hardscape-img_4086.jpg" alt="Paver patio taking shape" width="900" height="1200" loading="lazy"></figure>
+        <figure class="g-item" data-cat="hardscape"><img src="images/gallery/hardscape-img_4099.jpg" alt="Circular paver patio" width="900" height="1200" loading="lazy"></figure>
+        <figure class="g-item" data-cat="lawns"><img src="images/gallery/lawns-img_0005.jpg" alt="Aerial view of a freshly striped lawn" width="675" height="1200" loading="lazy"></figure>
+        <figure class="g-item" data-cat="lawns"><img src="images/gallery/lawns-img_0007.jpg" alt="Commercial mower on a striped lawn" width="900" height="1200" loading="lazy"></figure>
+        <figure class="g-item" data-cat="lawns"><img src="images/gallery/lawns-img_0102.jpg" alt="Crisp mowing stripes at a colonial home" width="1200" height="900" loading="lazy"></figure>
+        <figure class="g-item" data-cat="lawns"><img src="images/gallery/lawns-img_0117.jpg" alt="Mowing pattern along a driveway" width="1200" height="1135" loading="lazy"></figure>
+        <figure class="g-item" data-cat="lawns"><img src="images/gallery/lawns-img_0190.jpg" alt="Neighborhood lawn, freshly mowed" width="1055" height="1200" loading="lazy"></figure>
+        <figure class="g-item" data-cat="lawns"><img src="images/gallery/lawns-img_0315.jpg" alt="Striped lawn in a residential development" width="900" height="1200" loading="lazy"></figure>
+        <figure class="g-item" data-cat="lawns"><img src="images/gallery/lawns-img_0319.jpg" alt="Striped back lawn" width="900" height="1200" loading="lazy"></figure>
+        <figure class="g-item" data-cat="lawns"><img src="images/gallery/lawns-img_1415.jpg" alt="Wide lawn mowed in clean stripes" width="900" height="1200" loading="lazy"></figure>
+        <figure class="g-item" data-cat="lawns"><img src="images/gallery/lawns-img_1582.jpg" alt="Long lawn stripes" width="1200" height="528" loading="lazy"></figure>
+        <figure class="g-item" data-cat="lawns"><img src="images/gallery/lawns-img_2631.jpg" alt="Mower on the job" width="900" height="1200" loading="lazy"></figure>
+        <figure class="g-item" data-cat="lawns"><img src="images/gallery/lawns-img_2798.jpg" alt="Lawn stripes leading toward the road" width="1200" height="900" loading="lazy"></figure>
+        <figure class="g-item" data-cat="lawns"><img src="images/gallery/lawns-img_2807.jpg" alt="Mowed lawn along a winding driveway" width="1200" height="900" loading="lazy"></figure>
+        <figure class="g-item" data-cat="lawns"><img src="images/gallery/lawns-img_3261.jpg" alt="Striped lawn beside a home" width="900" height="1200" loading="lazy"></figure>
+        <figure class="g-item" data-cat="lawns"><img src="images/gallery/lawns-img_3293.jpg" alt="Fresh stripes on a driveway-side lawn" width="1200" height="900" loading="lazy"></figure>
+        <figure class="g-item" data-cat="lawns"><img src="images/gallery/lawns-img_3297.jpg" alt="Deep green mowing stripes" width="900" height="1200" loading="lazy"></figure>
+        <figure class="g-item" data-cat="lawns"><img src="images/gallery/lawns-img_3340.jpg" alt="Neat, freshly cut yard" width="900" height="1200" loading="lazy"></figure>
+        <figure class="g-item" data-cat="equipment"><img src="images/gallery/equipment-img_2136.jpg" alt="Loaders staged and ready" width="900" height="1200" loading="lazy"></figure>
+        <figure class="g-item" data-cat="equipment"><img src="images/gallery/equipment-img_2969.jpg" alt="Plow trucks and loaders lined up for winter" width="1200" height="900" loading="lazy"></figure>
+        <figure class="g-item" data-cat="equipment"><img src="images/gallery/equipment-img_3504.jpg" alt="Plow trucks on a snowy lot" width="900" height="1200" loading="lazy"></figure>
+        <figure class="g-item" data-cat="equipment"><img src="images/gallery/equipment-img_3557.jpg" alt="Plow trucks ready for the storm" width="900" height="1200" loading="lazy"></figure>
+        <figure class="g-item" data-cat="equipment"><img src="images/gallery/equipment-img_3196.jpg" alt="Skid steer on a job site" width="900" height="1200" loading="lazy"></figure>
+        <figure class="g-item" data-cat="equipment"><img src="images/gallery/equipment-img_3268.jpg" alt="Skid steer close-up" width="900" height="1200" loading="lazy"></figure>
+        <figure class="g-item" data-cat="equipment"><img src="images/gallery/equipment-img_0161.jpg" alt="Truck and commercial mower" width="900" height="1200" loading="lazy"></figure>
+        <figure class="g-item" data-cat="equipment"><img src="images/gallery/equipment-img_2962.jpg" alt="Tractor with a fresh loam delivery" width="900" height="1200" loading="lazy"></figure>
+        <figure class="g-item" data-cat="equipment"><img src="images/gallery/equipment-img_0160.jpg" alt="Moving a large evergreen with the tractor" width="900" height="1200" loading="lazy"></figure>
+        <figure class="g-item" data-cat="equipment"><img src="images/gallery/equipment-img_0387.jpg" alt="Mini excavator on a yard cleanup" width="900" height="1200" loading="lazy"></figure>
+        <figure class="g-item" data-cat="landscaping"><img src="images/gallery/landscaping-img_0010.jpg" alt="Fire pit patio with seating" width="900" height="1200" loading="lazy"></figure>
+        <figure class="g-item" data-cat="landscaping"><img src="images/gallery/landscaping-img_0162.jpg" alt="New arborvitae planting" width="900" height="1200" loading="lazy"></figure>
+        <figure class="g-item" data-cat="landscaping"><img src="images/gallery/landscaping-img_0165.jpg" alt="Arborvitae screen along a pond" width="900" height="1200" loading="lazy"></figure>
+        <figure class="g-item" data-cat="landscaping"><img src="images/gallery/landscaping-img_0171.jpg" alt="Evergreen privacy planting by a pond" width="900" height="1200" loading="lazy"></figure>
+        <figure class="g-item" data-cat="landscaping"><img src="images/gallery/landscaping-img_1199.jpg" alt="Trimmed hedge along the sidewalk" width="900" height="1200" loading="lazy"></figure>
+        <figure class="g-item" data-cat="landscaping"><img src="images/gallery/landscaping-img_1637.jpg" alt="Sculpted shrubs and fresh mulch" width="900" height="1200" loading="lazy"></figure>
+        <figure class="g-item" data-cat="landscaping"><img src="images/gallery/landscaping-img_2526.jpg" alt="Crew prepping a new planting bed" width="900" height="1200" loading="lazy"></figure>
+        <figure class="g-item" data-cat="landscaping"><img src="images/gallery/landscaping-img_3479.jpg" alt="Cleaned-up foundation beds" width="900" height="1200" loading="lazy"></figure>
+        <figure class="g-item" data-cat="landscaping"><img src="images/gallery/landscaping-img_3480.jpg" alt="Overgrown shrub before cleanup" width="1200" height="900" loading="lazy"></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HOW IT WORKS ============ -->
+  <section id="how-it-works" class="section-dark">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="section-eyebrow">GETTING STARTED</div>
+        <h2>How it works</h2>
+        <p>Four steps from "my yard needs help" to done.</p>
+      </div>
+      <div class="steps">
+        <div class="step">
+          <span class="step-num">01</span>
+          <h3>Reach out</h3>
+          <p>Fill out the quote form or call/text (207) 329-9788.</p>
+        </div>
+        <div class="step">
+          <span class="step-num">02</span>
+          <h3>Get pricing</h3>
+          <p>We follow up with straightforward pricing for your property.</p>
+        </div>
+        <div class="step">
+          <span class="step-num">03</span>
+          <h3>We schedule</h3>
+          <p>Pick a one-time visit or a recurring schedule that fits.</p>
+        </div>
+        <div class="step">
+          <span class="step-num">04</span>
+          <h3>We show up</h3>
+          <p>We do the work, clean up after ourselves, and you enjoy the yard.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SERVICE AREA ============ -->
+  <section id="area">
+    <div class="wrap area-grid">
+      <div>
+        <div class="section-eyebrow">WHERE WE WORK</div>
+        <h2>Serving Saco &amp; nearby towns</h2>
+        <p style="margin-top:14px;">Based in Saco, we regularly work throughout Southern Maine. Not seeing your town listed? Ask us anyway &mdash; give us a call.</p>
+        <ul class="area-towns">
+          <li>Saco</li>
+          <li>Old Orchard Beach</li>
+          <li>Biddeford</li>
+          <li>Scarborough</li>
+          <li>Buxton</li>
+          <li>Dayton</li>
+          <li>Arundel</li>
+          <li>Kennebunk</li>
+        </ul>
+      </div>
+      <div class="area-map">
+        <svg width="100%" height="100%" viewBox="0 0 480 400" xmlns="http://www.w3.org/2000/svg">
+          <rect width="480" height="400" fill="#16302A"/>
+          <circle cx="240" cy="200" r="6" fill="#9C3B1E"/>
+          <circle cx="240" cy="200" r="70" stroke="#6E9A4E" stroke-width="1.5" fill="none" opacity="0.5"/>
+          <circle cx="240" cy="200" r="130" stroke="#6E9A4E" stroke-width="1.5" fill="none" opacity="0.3"/>
+          <text x="240" y="222" text-anchor="middle" fill="#F1EDE1" font-family="Big Shoulders Display, sans-serif" font-size="18" letter-spacing="2">SACO, ME</text>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TESTIMONIALS ============ -->
+  <!-- Placeholder testimonials — replace with real reviews from Facebook/Google before launch -->
+  <section id="reviews" class="section-alt">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="section-eyebrow">CUSTOMERS</div>
+        <h2>What neighbors are saying</h2>
+        <p>Swap this section for real reviews pulled from your Facebook and Google listings.</p>
+      </div>
+      <div class="testimonial-grid">
+        <div class="testimonial">
+          <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p>"Reliable and easy to work with &mdash; they show up when they say they will and the lawn always looks great after."</p>
+          <div class="testimonial-name">Example Customer</div>
+          <div class="testimonial-loc">Saco, ME</div>
+        </div>
+        <div class="testimonial">
+          <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p>"Had them do a fall clean up and a small patio job. Fair price, good communication throughout."</p>
+          <div class="testimonial-name">Example Customer</div>
+          <div class="testimonial-loc">Biddeford, ME</div>
+        </div>
+        <div class="testimonial">
+          <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p>"Been using them weekly all summer. Never have to think about the lawn anymore."</p>
+          <div class="testimonial-name">Example Customer</div>
+          <div class="testimonial-loc">Old Orchard Beach, ME</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOLLOW US ============ -->
+  <section id="follow">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="section-eyebrow">SEE RECENT WORK</div>
+        <h2>Follow along</h2>
+        <p>Job-site photos, reels, and before/afters on Facebook and Instagram.</p>
+      </div>
+      <div class="social-row">
+        <a class="social-card" href="https://www.facebook.com/twobrotherslawncare7/" target="_blank" rel="noopener">
+          <span class="social-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M15 8h2V4h-3c-2.2 0-4 1.8-4 4v2H8v4h2v8h4v-8h3l1-4h-4V8c0-.6.4-1 1-1z" fill="currentColor"/></svg>
+          </span>
+          <span>
+            <strong>Facebook</strong>
+            <span>@twobrotherslawncare7</span>
+          </span>
+        </a>
+        <a class="social-card" href="https://www.facebook.com/twobrotherslawncare7/reels/" target="_blank" rel="noopener">
+          <span class="social-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><rect x="4" y="4" width="16" height="16" rx="3" stroke="currentColor" stroke-width="1.8"/><path d="M10 9l6 3-6 3V9z" fill="currentColor"/></svg>
+          </span>
+          <span>
+            <strong>Facebook Reels</strong>
+            <span>Watch recent job clips</span>
+          </span>
+        </a>
+        <a class="social-card" href="https://www.instagram.com/tblc_llc/" target="_blank" rel="noopener">
+          <span class="social-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><rect x="4" y="4" width="16" height="16" rx="5" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="3.4" stroke="currentColor" stroke-width="1.8"/><circle cx="16.6" cy="7.4" r="1" fill="currentColor"/></svg>
+          </span>
+          <span>
+            <strong>Instagram</strong>
+            <span>@tblc_llc</span>
+          </span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ JOIN THE TEAM ============ -->
+  <section id="join" class="section-alt">
+    <div class="wrap join-wrap">
+      <div class="join-copy">
+        <div class="section-eyebrow">NOW HIRING</div>
+        <h2>Join the Two Brothers team</h2>
+        <p>We're a growing, family-owned crew that takes pride in the work. If you show up on time, work hard, and care about the details, we'd like to hear from you &mdash; no resume required.</p>
+        <ul class="join-points">
+          <li>Lawn care, hardscape, and winter plow crews</li>
+          <li>Seasonal and year-round opportunities</li>
+          <li>Hands-on training with professional equipment</li>
+        </ul>
+        <p class="field-hint">Prefer to talk? Call or text <a href="tel:+12073299788">(207) 329-9788</a>.</p>
+      </div>
+      <div class="quote-card join-card">
+        <h2>Apply in 2 minutes</h2>
+        <p class="quote-sub">Fill this out and we'll reach out about next steps.</p>
+        <form id="applyForm" novalidate>
+          <div class="honeypot" aria-hidden="true">
+            <label for="a_company_website">Leave this field empty</label>
+            <input type="text" id="a_company_website" name="company_website" tabindex="-1" autocomplete="off">
+          </div>
+          <div class="field">
+            <label for="a_name">Full name *</label>
+            <input type="text" id="a_name" name="name" autocomplete="name" required>
+          </div>
+          <div class="field-row">
+            <div class="field">
+              <label for="a_phone">Phone *</label>
+              <input type="tel" id="a_phone" name="phone" autocomplete="tel" required>
+            </div>
+            <div class="field">
+              <label for="a_email">Email</label>
+              <input type="email" id="a_email" name="email" autocomplete="email">
+            </div>
+          </div>
+          <div class="field">
+            <label for="a_town">Town</label>
+            <input type="text" id="a_town" name="town" placeholder="e.g. Saco, Biddeford, Scarborough">
+          </div>
+          <div class="field-row">
+            <div class="field">
+              <label for="a_position">Position</label>
+              <select id="a_position" name="position">
+                <option value="">Select one</option>
+                <option value="lawn-crew">Lawn care crew</option>
+                <option value="hardscape-crew">Hardscape crew</option>
+                <option value="snow-plow-driver">Snow plow driver</option>
+                <option value="seasonal">Seasonal help</option>
+                <option value="other">Other / not sure</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="a_experience">Experience</label>
+              <select id="a_experience" name="experience">
+                <option value="">Select one</option>
+                <option value="none">None yet &mdash; eager to learn</option>
+                <option value="under-1">Under 1 year</option>
+                <option value="1-3">1&ndash;3 years</option>
+                <option value="3-plus">3+ years</option>
+              </select>
+            </div>
+          </div>
+          <div class="field-row">
+            <div class="field">
+              <label for="a_drivers_license">Valid driver's license?</label>
+              <select id="a_drivers_license" name="drivers_license">
+                <option value="">Select one</option>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="a_start_date">Available to start</label>
+              <input type="text" id="a_start_date" name="start_date" placeholder="e.g. Immediately, May 1">
+            </div>
+          </div>
+          <div class="field">
+            <label for="a_about">Tell us about yourself</label>
+            <textarea id="a_about" name="about" placeholder="Past work, equipment you've run, schedule, anything else..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-pine btn-block" id="applySubmit">Submit Application</button>
+          <div class="form-status" id="applyStatus" role="status" aria-live="polite"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FINAL CTA ============ -->
+  <section class="cta-band">
+    <div class="wrap">
+      <h2>Ready for a yard<br>you don't think about?</h2>
+      <p>Get a free quote today &mdash; most properties get a price back within one business day.</p>
+      <div class="cta-actions">
+        <a href="#quote" class="btn btn-pine">Get a Free Quote</a>
+        <a href="tel:+12073299788" class="btn btn-outline">Call (207) 329-9788</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <a href="index.html" class="footer-brand">
+          <img src="images/logo-real.jpg" alt="" width="34" height="34" style="border-radius:50%; object-fit:cover;">
+          <span class="brand-text">Two Brothers Lawn Care</span>
+        </a>
+        <p>Family-owned lawn &amp; landscape care serving Saco, Maine and the surrounding towns.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="#services">Services</a></li>
+          <li><a href="#how-it-works">How It Works</a></li>
+          <li><a href="#area">Service Area</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+          <li><a href="#join">Careers</a></li>
+          <li><a href="#quote">Get a Quote</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul class="footer-links">
+          <li><a href="tel:+12073299788">(207) 329-9788</a></li>
+          <li><a href="https://www.facebook.com/twobrotherslawncare7/" target="_blank" rel="noopener">Facebook</a></li>
+          <li><a href="https://www.instagram.com/tblc_llc/" target="_blank" rel="noopener">Instagram</a></li>
+          <li>Saco, ME</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span id="year"></span> Two Brothers Lawn Care LLC. All rights reserved.</span>
+      <span>Saco, Maine</span>
+    </div>
+  </div>
+</footer>
+
+<div class="lightbox" id="lightbox" hidden role="dialog" aria-modal="true" aria-label="Photo viewer">
+  <button class="lb-close" id="lbClose" aria-label="Close">&times;</button>
+  <button class="lb-nav lb-prev" id="lbPrev" aria-label="Previous photo">&#8249;</button>
+  <img id="lbImg" alt="">
+  <button class="lb-nav lb-next" id="lbNext" aria-label="Next photo">&#8250;</button>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
