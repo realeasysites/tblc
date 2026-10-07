@@ -5,6 +5,7 @@
 
 require('dotenv').config();
 const path = require('path');
+const fs = require('fs');
 const express = require('express');
 const helmet = require('helmet');
 
@@ -23,6 +24,18 @@ app.use(helmet({
 }));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+
+// Home page: fill in the site's own address so link previews (iMessage, Facebook,
+// text messages) get a full image URL on whatever domain the site is served from.
+const INDEX_HTML = path.join(__dirname, 'public', 'index.html');
+function serveHome(req, res, next) {
+  fs.readFile(INDEX_HTML, 'utf8', (err, html) => {
+    if (err) return next();
+    const siteUrl = `${req.protocol}://${req.get('host')}`;
+    res.type('html').send(html.replace(/__SITE_URL__/g, siteUrl));
+  });
+}
+app.get(['/', '/index.html'], serveHome);
 
 // Public site
 app.use(express.static(path.join(__dirname, 'public'), { extensions: ['html'] }));
